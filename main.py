@@ -16,7 +16,7 @@ async def main():
 
         pool = await asyncpg.create_pool(
             host=os.environ["PSQL_IP"],
-            port=os.environ["PSQL_PORT"],
+            port=int(os.environ["PSQL_PORT"]),
             user=os.environ["PSQL_USER"],
             password=os.environ["PSQL_PASS"],
             database=os.environ["PSQL_DB"],

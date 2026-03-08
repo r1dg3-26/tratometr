@@ -1,6 +1,6 @@
 from aiogram import Router
-from . import start, decrease
+from . import operations, register
 
 router = Router()
-router.include_router(start.router)
-router.include_router(decrease.router)
+router.include_router(register.router)
+router.include_router(operations.router)
