@@ -4,9 +4,8 @@
 
 ## Возможности
 - Регистрация через /start
-- Установка начального баланса
 - Добавление расходов и доходов
-- Хранение истории операций (не выводится в ТГ)
+- Хранение и вывод истории операций
 
 ## Требования
 - Python
@@ -31,7 +30,9 @@
 
 ## Использование
 - /start — регистрация
-- баланс 1000 — установить баланс
+- /operations — вывести все операции
+- /timezone 5 — установить часовой пояс
+- /balance 1000 — установить баланс
 - -50 обед — списать расход
 - +1000 зарплата — добавить доход
 
@@ -43,9 +44,8 @@ Telegram bot for tracking expenses and income.
 
 ## Features
 - Registration via /start
-- Setting initial balance
 - Adding expenses and income
-- Storing operation history (not displayed in TG)
+- Storing and viewing operation history
 
 ## Requirements
 - Python
@@ -70,6 +70,8 @@ Telegram bot for tracking expenses and income.
 
 ## Usage
 - /start — register
-- баланс 1000 — set balance
+- /operations — show all operations
+- /timezone 5 — set timezone
+- /balance 1000 — set balance
 - -50 lunch — log expense
 - +1000 salary — log income
